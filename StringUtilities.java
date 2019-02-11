@@ -46,9 +46,9 @@ public class StringUtilities {
     public String removeCharacter(String value, Character charToRemove) {
         char[] charArray = value.toCharArray();
         String result = "";
-        for (int i = 0; i < charArray.length; i++){
-            if (charArray[i] != charToRemove) {
-                result += charArray[i];
+        for (char c : charArray){
+            if (c != charToRemove) {
+                result += c;
             }
         }
         return result;
